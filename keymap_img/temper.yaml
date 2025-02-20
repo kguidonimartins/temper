@@ -1,168 +1,148 @@
 layers:
-  default:
-  - - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
-  - - Z
-    - X
-    - C
-    - D
-    - V
-    - K
+  qwert:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - {t: A, h: ⌘}
+    - {t: S, h: ⎇}
+    - {t: D, h: ⇧}
+    - {t: F, h: ⌃}
+    - G
     - H
-    - {t: ',', s: ;}
-    - {t: ., s: ':'}
-    - {t: '?', s: '!'}
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: default, h: toggle}
-  game:
-  - - ↹
-    - Q
-    - W
-    - E
-    - R
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⇧
-    - A
-    - S
-    - D
-    - F
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌃
-    - Z
-    - X
+    - {t: J, h: ⌃}
+    - {t: K, h: ⇧}
+    - {t: L, h: ⎇}
+    - {t: ':', h: ⌘}
+  - - Z
+    - {t: X, h: outro}
     - C
     - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ESC
-    - {t: ▽, type: trans}
-    - SPACE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - B
+    - N
+    - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
+  - - {t: ESC, h: ⇧}
+    - {t: ↹, h: LCMD}
+    - {t: RET, h: nav}
+    - {t: SPACE, h: sym}
+    - {t: BSPC, h: num}
+    - {t: DEL, h: fun}
   num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
+  - - {t: '[', s: '{'}
     - '7'
     - '8'
     - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
     - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
-    - {t: '=', s: +}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - [(, '4', '5', '6', ), '', ⌃, ⇧, ⎇, RCMD]
+  - ['{', '1', '2', '3', '}', '', '', '', '', '']
+  - - F2
     - '0'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+  sym:
+  - - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - ⇪
+    - {t: '`', s: '~'}
+    - '~'
+    - ^
+    - {t: ;, s: ':'}
+  - ['*', '&', \, '|', '''', ←, ↓, ↑, →, '''']
+  - - _
+    - {t: '-', s: _}
+    - {t: '=', s: +}
+    - +
+    - ^
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - {t: '`', s: '~'}
+    - '~'
+    - ''''
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - DEL
-    - HOME
-    - END
-    - ↹
+  - - Gui+~
+    - ''
+    - ''
+    - ''
+    - ''
+    - ⇪
+    - {t: '`', s: '~'}
+    - '~'
+    - ^
+    - {t: ;, s: ':'}
+  - [Gui+↹, '', '', '', '', ←, ↓, ↑, →, '"']
+  - [Gui+Sft+↹, '', '', '', '', '&tmux_list', '', '', '', '''']
+  - - ''
+    - ''
+    - {type: held}
+    - ''
     - BSPC
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - {t: ▽, type: trans}
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: ESC, s: '`'}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''
+  outro:
+  - ['', '', '', '', '', Gui+Ctl+Y, PREV, PP, NEXT, '&macro_print']
+  - ['', '', '', '', '', BRI DN, VOL DN, VOL UP, BRI UP, '']
+  - - ''
     - {type: held}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - 'VOL
+
+      MUTE'
+    - '&macro_zoomin'
+    - '&macro_zoomout'
+    - '&macro_zoomreset'
+  - ['', '', '', '', '', '']
   fun:
-  - - {t: game, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - OUT USB
-    - {t: ▽, type: trans}
-    - F7
-    - F8
-    - F9
-    - F12
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
-    - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
-    - PREV
-    - PP
-    - NEXT
-    - OUT BLE
-    - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F10
-  - - {t: ▽, type: trans}
+  - [⌘Q, Gui+Ctl+W, Gui+Ctl+E, Gui+Ctl+R, Gui+Ctl+T, Gui+Ctl+Y, Gui+Ctl+U, Gui+Ctl+I, Gui+Ctl+O, Gui+Ctl+P]
+  - - Gui+Ctl+A
+    - Gui+Ctl+S
+    - Gui+Ctl+D
+    - Gui+Ctl+F
+    - Gui+Ctl+G
+    - Gui+Ctl+H
+    - Gui+Ctl+J
+    - Gui+Ctl+K
+    - Gui+Ctl+L
+    - {t: Gui+Ctl+;, s: 'Gui+Ctl+:'}
+  - - Gui+Ctl+Z
+    - Gui+Ctl+X
+    - Gui+Ctl+C
+    - Gui+Ctl+V
+    - Gui+Ctl+B
+    - Gui+Ctl+N
+    - Gui+Ctl+M
+    - {t: 'Gui+Ctl+,', s: Gui+Ctl+<}
+    - {t: Gui+Ctl+., s: Gui+Ctl+>}
+    - {t: Gui+Ctl+/, s: 'Gui+Ctl+?'}
+  - - ''
+    - ''
+    - Gui+Ctl+RET
+    - ''
+    - BSPC
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
+combos:
+- p: [31, 34]
+  k: {t: '-', s: _}
+- p: [32, 33]
+  k: _
+- p: [30, 35]
+  k: {t: '=', s: +}
+- p: [20, 29]
+  k: +
