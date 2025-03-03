@@ -201,7 +201,7 @@
                 , <&macro_release &kp COMMA>
                 ;
         };
-        macro_print: macro_print_area_default {
+        macro_print_area_default: macro_print_area_default {
             label = "macro_print_area_default";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -214,7 +214,7 @@
                 , <&macro_release &kp N2>
                 ;
         };
-        macro_print: macro_print_full {
+        macro_print_full: macro_print_full {
             label = "macro_print_full";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -227,7 +227,7 @@
                 , <&macro_release &kp N1>
                 ;
         };
-        macro_print: macro_print_area_clipboard {
+        macro_print_area_clipboard: macro_print_area_clipboard {
             label = "macro_print_area_clipboard";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
