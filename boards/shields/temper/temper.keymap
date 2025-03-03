@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// fake trigger
+
 //&sk {
 //    release-after-ms = <750>;
 //    quick-release;
@@ -200,9 +202,8 @@
                 , <&macro_release &kp COMMA>
                 ;
         };
-
-        macro_print: macro_print_area {
-            label = "macro_print_area";
+        macro_print: macro_print {
+            label = "macro_print";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -212,36 +213,6 @@
                 , <&macro_release &kp LCMD>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp N2>
-                ;
-        };
-
-        macro_print: macro_print_full {
-            label = "macro_print_full";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD>
-                , <&macro_press &kp LSHFT>
-                , <&macro_press &kp N1>
-                , <&macro_release &kp LCMD>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp N1>
-                ;
-        };
-
-        macro_print: macro_print_area_clipboard {
-            label = "macro_print_area_clipboard";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD>
-                , <&macro_press &kp LSHFT>
-                , <&macro_press &kp LCTRL>
-                , <&macro_press &kp N4>
-                , <&macro_release &kp LCMD>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
-                , <&macro_release &kp N4>
                 ;
         };
 
@@ -310,9 +281,9 @@
 
 		num_layer {
 			bindings = <
-                   &kp LBKT     &kp N7        &kp N8        &kp N9             &kp RBKT           &kp STAR            &kp BSLSH        &kp PIPE              &kp PRCNT         &none
-                   &kp LPAR     &kp N4        &kp N5        &kp N6             &kp RPAR           &kp PLUS         &bhm RCTRL UNDER  &bhm RSHFT MINUS     &bhm RALT EQUAL   &bhm RGUI COLON
-                   &kp LBRC     &kp N1        &kp N2        &kp N3             &kp RBRC           &none               &none            &kp COMMA             &kp DOT       &kp SLASH
+                   &kp LBKT     &kp N7        &kp N8        &kp N9             &kp RBKT           &none               &none            &none                 &none         &none
+                   &kp LPAR     &kp N4        &kp N5        &kp N6             &kp RPAR           &none               &kp RCTRL        &kp RSHFT             &kp RALT      &kp RCMD
+                   &kp LBRC     &kp N1        &kp N2        &kp N3             &kp RBRC           &none               &none            &none                 &none         &none
 				 /*&            &*/         &kp F2             &kp N0             &trans              &trans           &trans                &trans     /*             &             &*/
 			>;
 		};
@@ -337,8 +308,8 @@
 
 		outro_layer {
 			bindings = <
-                   &none        &none         &none         &none              &none             CCY                 &kp C_PREV       &kp C_PP                 &kp C_NEXT    &macro_print_area
-                   &none        &none         &none         &none              &none             &kp C_BRI_DN        &kp C_VOL_DN     &kp C_VOL_UP             &kp C_BRI_UP  &macro_print_area_clipboard
+                   &none        &none         &none         &none              &none             CCY                 &kp C_PREV       &kp C_PP                 &kp C_NEXT    &macro_print
+                   &none        &none         &none         &none              &none             &kp C_BRI_DN        &kp C_VOL_DN     &kp C_VOL_UP             &kp C_BRI_UP  &none
                    &none        &none         &none         &none              &none             &none               &kp C_MUTE       &macro_zoomin            &macro_zoomout &macro_zoomreset
 				 /*&            &*/         &none              &none             &none               &none            &none                    &none     /*            &             &*/
 			>;
