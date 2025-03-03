@@ -311,7 +311,7 @@
 
 		num_layer {
 			bindings = <
-                   &kp LBKT     &kp N7        &kp N8        &kp N9             &kp RBKT           &kp STAR            &kp BSLSH        &kp PIPE              &kp PRCNT         &none
+                   &kp LBKT     &kp N7        &kp N8        &kp N9             &kp RBKT           &kp STAR            &kp BSLH        &kp PIPE              &kp PRCNT         &none
                    &kp LPAR     &kp N4        &kp N5        &kp N6             &kp RPAR           &kp PLUS         &bhm RCTRL UNDER  &bhm RSHFT MINUS     &bhm RALT EQUAL   &bhm RGUI COLON
                    &kp LBRC     &kp N1        &kp N2        &kp N3             &kp RBRC           &none               &none            &kp COMMA             &kp DOT       &kp SLASH
 				 /*&            &*/         &kp F2             &kp N0             &trans              &trans           &trans                &trans     /*             &             &*/
