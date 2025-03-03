@@ -33,13 +33,31 @@ layers:
     - '8'
     - '9'
     - {t: ']', s: '}'}
+    - '*'
+    - BSLSH
+    - '|'
+    - '%'
+    - ''
+  - - (
+    - '4'
+    - '5'
+    - '6'
+    - )
+    - +
+    - {t: _, h: ⌃}
+    - {t: '-', h: ⇧, s: _}
+    - {t: '=', h: ⎇, s: +}
+    - {t: ':', h: ⌘}
+  - - '{'
+    - '1'
+    - '2'
+    - '3'
+    - '}'
     - ''
     - ''
-    - ''
-    - ''
-    - ''
-  - [(, '4', '5', '6', ), '', ⌃, ⇧, ⎇, RCMD]
-  - ['{', '1', '2', '3', '}', '', '', '', '', '']
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, s: '?'}
   - - F2
     - '0'
     - {t: ▽, type: trans}
@@ -94,8 +112,8 @@ layers:
     - BSPC
     - ''
   outro:
-  - ['', '', '', '', '', Gui+Ctl+Y, PREV, PP, NEXT, '&macro_print']
-  - ['', '', '', '', '', BRI DN, VOL DN, VOL UP, BRI UP, '']
+  - ['', '', '', '', '', Gui+Ctl+Y, PREV, PP, NEXT, '&macro_print_area']
+  - ['', '', '', '', '', BRI DN, VOL DN, VOL UP, BRI UP, '&macro_print_area_clipboard']
   - - ''
     - {type: held}
     - ''
