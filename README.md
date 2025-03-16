@@ -1,3 +1,5 @@
 # Temper ZMK Config
 
-This is my personal ZMK config for the [temper](https://github.com/raeedcho/temper).
+My personal ZMK config for the temper: https://github.com/raeedcho/temper
+
+Forked from: https://github.com/raeedcho/temper-zmk-config
