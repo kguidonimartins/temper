@@ -317,7 +317,7 @@
 		sym_layer {
 			bindings = <
                    &kp EXCL     &kp AT        &kp HASH      &kp DLLR           &kp PRCNT          &caps_word          &kp GRAVE       &kp TILDE             &kp CARET     &kp SEMI
-                   &kp EQUAL   &kp PLUS      &kp MINUS      &kp UNDER          &kp SQT            &kp LEFT            &kp DOWN        &kp UP                &kp RIGHT     &kp SQT
+                   &kp EQUAL   &kp PLUS      &kp MINUS      &kp UNDER          &kp DQT            &kp LEFT            &kp DOWN        &kp UP                &kp RIGHT     &kp SQT
                    &kp BSLH    &kp AMPS      &kp STAR       &kp PIPE           &kp CARET          &none               &none           &none                 &none         &none
 				 /*&            &*/         &kp GRAVE          &kp TILDE          &kp SQT              &trans           &trans                   &trans     /*             &             &*/
 			>;
