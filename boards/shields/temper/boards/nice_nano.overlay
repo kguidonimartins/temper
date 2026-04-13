@@ -1,5 +1,6 @@
 /*
- * See nice_nano_v2.overlay — SPI/WS2812 intentionally omitted for deep sleep.
+ * RGB/WS2812 intentionally omitted (see temper.conf). SPI nodes would stay
+ * initialized and can block zmk_pm_suspend_devices() before deep sleep.
  */
 
 / {
