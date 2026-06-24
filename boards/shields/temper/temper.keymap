@@ -326,8 +326,8 @@ ZMK_HOLD_TAP(hmr,
             bindings = <
                    &kp Q         &kp W         &kp E         &kp R              &kp T              &kp Y               &kp U            &kp I                 &kp O         &kp P
                    &hml LGUI A   &hml LALT S   &hml LSHFT D  &hml LCTRL F       &kp G              &kp H               &hmr RCTRL J     &hmr RSHFT K          &hmr RALT L   &hmr RGUI COLON
-                   &kp Z         &lt FUN_L X   &kp C         &kp V              &kp B              &kp N               &kp M            &kp COMMA             &kp DOT       &kp SLASH
-                 /*&            &*/              &bhm LSHFT ESC   &bhm LCMD TAB  &lt NAV_L RET     &lt SYM_L SPACE  &lt NUM_L BSPC       &lt OUT_L DEL     /*  &             &*/
+                   &kp Z         &lt OUT_L X   &kp C         &kp V              &kp B              &kp N               &kp M            &kp COMMA             &kp DOT       &kp SLASH
+                 /*&            &*/              &bhm LSHFT ESC   &bhm LCMD TAB  &lt NAV_L RET     &lt SYM_L SPACE  &lt NUM_L BSPC       &lt FUN_L DEL     /*  &             &*/
             >;
         };
 
