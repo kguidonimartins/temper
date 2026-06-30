@@ -342,7 +342,7 @@ ZMK_HOLD_TAP(hmr,
 
         sym_layer {
             bindings = <
-                   &kp EXCL     &kp AT        &kp HASH      &kp DLLR           &kp PRCNT          &caps_word          &kp GRAVE       &kp TILDE             &kp CARET     &none
+                   &kp EXCL     &kp AT        &kp HASH      &kp DLLR           &kp PRCNT          &none          &none       &none             &none     &none
                    &kp EQUAL   &kp PLUS      &kp MINUS      &kp UNDER          &kp DQT            &kp LEFT            &kp DOWN        &kp UP                &kp RIGHT     &kp SQT
                    &kp BSLH    &kp AMPS      &kp STAR       &kp PIPE           &kp CARET          &none               &none           &none                 &none         &none
                  /*&            &*/         &kp GRAVE          &kp TILDE          &kp SQT              &trans           &trans                   &trans     /*             &             &*/
@@ -351,7 +351,7 @@ ZMK_HOLD_TAP(hmr,
 
         nav_layer {
             bindings = <
-                   TAB_CY        &none         &none         &none              &none             &kp GRAVE           &kp APOSTROPHE   &kp TILDE             &kp CARET     &kp SEMI
+                   TAB_CY        &none         &none         &none              &none             &kp GRAVE           &kp TILDE   &kp APOSTROPHE             &kp CARET     &kp SEMI
                    TAB_FW        &none         &none         &none              &none             &kp LEFT            &kp DOWN         &kp UP                &kp RIGHT     &kp DQT
                    TAB_BW        &none         &none         &none              &none             &tmux_list          &caps_word       &none                 &none         &kp SQT
                  /*&            &*/         &none              &none             &none               &none            &kp BSPC                 &none     /*            &             &*/
